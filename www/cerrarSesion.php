@@ -4,7 +4,15 @@
 	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR MÁS POCO QUE SEA".
 	*/
 	session_start();
+	
 	$_SESSION['usuario'] = array();
+	
+	// remove all session variables
+	session_unset();
+
+	// destroy the session
 	session_destroy();
+	
+	
 	header("Location: index.php");
  ?>
