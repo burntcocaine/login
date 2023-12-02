@@ -15,7 +15,7 @@ function registrarCliente(){
 			  		  edad: edad, dni: dni, direccion: direccion },
 			  success: function(msg){
 			  	if(msg == "correcto"){
-			  		$("#mensaje").html("<div class='alert alert-success'><i class='icon-ok-sign'></i> Cliente registrado con �xito</div>");
+			  		$("#mensaje").html("<div class='alert alert-success'><i class='icon-ok-sign'></i> Cliente registrado con éxito</div>");
 			  		listarClientes();
 			  	}
 			  }		  
@@ -30,6 +30,7 @@ function registrarCliente(){
 		  });
 	});
 }
+
 
 function listarClientes(){
 	 

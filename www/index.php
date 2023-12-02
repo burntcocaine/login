@@ -1,9 +1,9 @@
 <?php 
 	/* Desarrollado por: PROGRAMANDO BROTHERS 	
-	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vídeos.
-	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR MÁS POCO QUE SEA".
+	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vï¿½deos.
+	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR Mï¿½S POCO QUE SEA".
 	*/
-    //verificar si mi session aún existe, si existe entonces que no nos deje pasar a index, 
+    //verificar si mi session aï¿½n existe, si existe entonces que no nos deje pasar a index, 
     // y la redireccionamos a prinpipal hasta q la session se destruya
     session_start();
     if(isset($_SESSION['usuario'])){
@@ -13,7 +13,7 @@
 <!DOCTYPE html>
 <html class="login-bg" lang="es">
 <head>
-    <title>PB - Iniciar Sesión</title>
+    <title>PB - Iniciar SesiÃ³n</title>
     <meta http-equiv="Content-Type" content="text/html; charset=uft-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -38,7 +38,7 @@
 <body>
     <div class="header">
         <a href="index.php">
-            <img src="css/images/logo.png" class="logo" alt="logo" />
+            <img src="css/images/PB.png" class="logo" alt="logo" />
         </a>
     </div>
     <div class="login-wrapper">
@@ -46,11 +46,11 @@
         
             <div class="box">
                 <div class="content-wrap">
-                    <h6>Iniciar Sesión</h6>
+                    <h6>Iniciar SesiÃ³n</h6>
                     <input name="usuario" id="usuario" class="form-control" type="text" placeholder="Usuario" required autofocus>
-                    <input name="contra" id="contra" class="form-control" type="password" placeholder="Contraseña" required>                
+                    <input name="contra" id="contra" class="form-control" type="password" placeholder="ContraseÃ±a" required>                
                     <div class="action">
-                        <button class="btn-flat" id="submit">Iniciar Sesión</button>
+                        <button class="btn-flat" id="submit">Iniciar SesiÃ³n</button>
                     </div>                
                 </div>
                 <div id="msg">                            

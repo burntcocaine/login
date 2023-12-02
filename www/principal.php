@@ -1,7 +1,7 @@
 <?php  
 	/* Desarrollado por: PROGRAMANDO BROTHERS 	
-	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vídeos.
-	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR MÁS POCO QUE SEA".
+	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vï¿½deos.
+	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR Mï¿½S POCO QUE SEA".
 	*/
     session_start();
     $usuario = $_SESSION['usuario'];
@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Programand Brothers</title>
+    <title>Programando Brothers</title>
     <meta http-equiv="Content-Type" content="text/html; charset=uft-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -106,7 +106,7 @@
     <div class="content">
         <div id="pad-wrapper" class="form-page">
             <div class="row header">
-                <h3>Bienvenido a este pequeño Sistema</h3>
+                <h3>Bienvenido a este pequeÃ±o Sistema</h3>
                 
             </div>
         </div>

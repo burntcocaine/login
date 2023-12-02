@@ -14,7 +14,7 @@
 
 	$sql = "INSERT INTO cliente (nombre, ape_paterno, ape_materno, edad, direccion, dni, estado) 
 				VALUES ('$nombre', '$ape_paterno', '$ape_materno', $edad, '$direccion', '$dni', 1);";
-	$res = mysql_query($sql);
+	$res = mysqli_query($conn,$sql);
 	if ( isset( $res ) )
 		echo "correcto";
 	else

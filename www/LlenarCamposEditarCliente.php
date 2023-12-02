@@ -1,13 +1,13 @@
 <?php 
 /* Desarrollado por: PROGRAMANDO BROTHERS 	
-	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vídeos.
-	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR MÁS POCO QUE SEA".
+	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vï¿½deos.
+	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR Mï¿½S POCO QUE SEA".
 	*/
 include_once('conexion.php');
 $ide = $_POST['ide'];
 $sql_edit= "SELECT idcliente, nombre, ape_paterno, ape_materno, edad, direccion, dni from cliente where idcliente =$ide;";
-$res_edit = mysql_query($sql_edit);
-$edit_clientes = mysql_fetch_array($res_edit);
+$res_edit = mysqli_query($conn,$sql_edit);
+$edit_clientes = mysqli_fetch_array($res_edit);
 echo "
 
 <!-- Modal para Editar-->
@@ -50,7 +50,7 @@ echo "
                     </div>
                 </div>
                 <div class='form-group'>
-                    <label for='dir_edit' class='col-lg-2 control-label'>Dirección</label>
+                    <label for='dir_edit' class='col-lg-2 control-label'>DirecciÃ³n</label>
                     <div class='col-lg-10'>
                         <input type='text' class='form-control' name='dir_edit' id='dir_edit' value='$edit_clientes[5]'>
                     </div>

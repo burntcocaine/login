@@ -13,7 +13,7 @@
 	$dni_edit = $_POST['dni_edit'];
 	$sql= "UPDATE cliente SET nombre = '$nom_edit', ape_paterno='$ape_pedit', ape_materno='$ape_medit', 
 			edad=$edad_edit, direccion='$dir_edit', dni=$dni_edit WHERE idcliente =$ideditar;";
-	$res = mysql_query($sql);
+	$res = mysqli_query($conn,$sql);
 
 	if ( isset($res) )
 		echo "Correcto";

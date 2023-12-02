@@ -1,12 +1,12 @@
 <?php 
 	/* Desarrollado por: PROGRAMANDO BROTHERS 	
-	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vídeos.
-	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR MÁS POCO QUE SEA".
+	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vï¿½deos.
+	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR Mï¿½S POCO QUE SEA".
 	*/
 	sleep(1);
 	include_once('conexion.php');
 	$sql = "SELECT * FROM cliente WHERE estado = 1;";
-	$res = mysql_query($sql);
+	$res = mysqli_query($conn,$sql);
 	$ide = "";
 	echo "<div id='pad-wrapper' class='datatables-page' style='margin-top:0px;'>";            
 	echo "           <div class='row'>";
@@ -18,14 +18,14 @@
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'>Nombre</th>";
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'>Apellidos</th>";
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'>DNI</th>";
-	echo "                                <th tabindex='0' rowspan='1' colspan='1'>Dirección</th>";
+	echo "                                <th tabindex='0' rowspan='1' colspan='1'>DirecciÃ³n</th>";
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'>Edad</th>";
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'></th>";
 	echo "                                <th tabindex='0' rowspan='1' colspan='1'></th>";
 	echo "                            </tr>";
 	echo "                        </thead>";
 	echo "                        <tbody>";
-			while ($clientes = mysql_fetch_array($res)) {
+			while ($clientes = mysqli_fetch_array($res)) {
 	echo "                            <tr>";
 	echo "                                <td style = 'display:none;'>$clientes[0]</td>";
 	echo "                                <td>".$clientes[1]."</td>";
@@ -64,7 +64,7 @@
 						'sProcessing':     'Cargando...',
 						'sLengthMenu':     'Mostrar _MENU_ registros',
 						'sZeroRecords':    'No se encontraron resultados',
-						'sEmptyTable':     'Ningún dato disponible en esta tabla',
+						'sEmptyTable':     'NingÃºn dato disponible en esta tabla',
 						'sInfo':           'Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros',
 						'sInfoEmpty':      'Mostrando registros del 0 al 0 de un total de 0 registros',
 						'sInfoFiltered':   '(filtrado de un total de _MAX_ registros)',
@@ -75,7 +75,7 @@
 						'sLoadingRecords': 'Cargando...',
 						'oPaginate': {
 							'sFirst':    'Primero',
-							'sLast':     'Último',
+							'sLast':     'Ãšltimo',
 							'sNext':     'Siguiente',
 							'sPrevious': 'Anterior'
 						},
