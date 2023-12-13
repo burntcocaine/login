@@ -1,4 +1,4 @@
-<?php  
+;<?php  
 	/* Desarrollado por: PROGRAMANDO BROTHERS 	
 	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los v�deos.
 	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR M�S POCO QUE SEA".
@@ -7,6 +7,7 @@
     $usuario = $_SESSION['usuario'];
     if(!isset($usuario)){
         header("Location: index.php");
+	exit;
     }
 ?>
 <!DOCTYPE html>
