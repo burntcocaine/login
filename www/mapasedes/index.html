@@ -1,0 +1,154 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The PHP Lands | A pirate map of PHP</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="The PHP Lands" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Explore the PHP language and ecosystem in a fun and interactive way using a pirate map." />
+<meta property="og:description" content="Explore the PHP language and ecosystem in a fun and interactive way using a pirate map." />
+<link rel="canonical" href="https://lands.php.earth/" />
+<meta property="og:url" content="https://lands.php.earth/" />
+<meta property="og:site_name" content="The PHP Lands" />
+<meta property="og:image" content="https://raw.githubusercontent.com/phpearth/assets/master/php-lands/og.jpg" />
+<meta property="og:image:height" content="1200" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:alt" content="The PHP Lands" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://raw.githubusercontent.com/phpearth/assets/master/php-lands/og.jpg" />
+<meta name="twitter:image:alt" content="The PHP Lands" />
+<meta property="twitter:title" content="The PHP Lands" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"Explore the PHP language and ecosystem in a fun and interactive way using a pirate map.","headline":"The PHP Lands","image":{"width":1200,"height":1200,"alt":"The PHP Lands","url":"https://raw.githubusercontent.com/phpearth/assets/master/php-lands/og.jpg","@type":"imageObject"},"name":"The PHP Lands","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://raw.githubusercontent.com/phpearth/assets/master/php-lands/og.jpg"}},"url":"https://lands.php.earth/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <link rel="icon" type="image/x-icon" href="https://php.earth/favicon.ico">
+
+    <link rel="stylesheet" href="https://php.earth/assets/main.css">
+    <link rel="stylesheet" href="/dist/style.css?v8">
+  </head>
+  <body>
+    <div class="ui stackable inverted borderless menu">
+      <div class="ui container">
+        <a class="item" href="https://php.earth/"><img src="https://php.earth/assets/img/phpearth-menu.png" alt="PHP.earth" class="pe-logo"> <span class="pe-logo-title">PHP.earth</span></a>
+        <h1 id="h1">The PHP Lands</h1>
+      </div>
+    </div>
+
+    <video loop muted autoplay class="fullscreen" id="video">
+      <source src="https://raw.githubusercontent.com/phpearth/assets/master/php-lands/ship.mp4" type="video/mp4">
+    </video>
+
+    <div class="ui pe-body">
+      <div class="ui container">
+        <div class="ui inverted segment pe-content-segment">
+          <p class="pe-center">Explore the PHP language and ecosystem in a fun and interactive way using a pirate map.</p>
+
+<div class="ui inverted segment pe-map-segment">
+  <div id="pe-dimmer" class="ui enabled inverted dimmer">
+    <div id="pe-loader" class="ui text loader">Loading</div>
+  </div>
+
+  <div class="pe-container">
+    <div id="phplandsmap" data-map-src="https://raw.githubusercontent.com/phpearth/assets/master/php-lands/2022/v1.2"><div id="tooltip"></div><div id="coordinates"></div></div>
+  </div>
+</div>
+
+<div class="ui inverted large list">
+  <div class="item">
+    <i class="compass icon"></i>
+    <div class="content">
+      <div class="header">Cartographers</div>
+      <div class="description">PHP.earth</div>
+    </div>
+  </div>
+  <div class="item">
+    <i class="binoculars icon"></i>
+    <div class="content">
+      <div class="header">Explorers</div>
+      <div class="description">
+        
+          <a href="https://github.com/petk">petk</a>,
+        
+          <a href="https://github.com/apps/dependabot">dependabot[bot]</a>,
+        
+          <a href="https://github.com/Maikuolan">Maikuolan</a>,
+        
+          <a href="https://github.com/chriskapp">chriskapp</a>,
+        
+          <a href="https://github.com/markusguenther">markusguenther</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <i class="map marker alternate icon"></i>
+    <div class="content">
+      <div class="header">Starring</div>
+      <div class="description">PHP community</div>
+    </div>
+  </div>
+  <div class="item">
+    <i class="github icon"></i>
+    <div class="content">
+      <div class="header">Blueprints</div>
+      <div class="description"><a href="https://github.com/phpearth/php-lands">GitHub</a></div>
+    </div>
+  </div>
+  <div class="item">
+    <i class="lightbulb outline icon"></i>
+    <div class="content">
+      <div class="header">Inspiration</div>
+      <div class="description"><a href="https://fearlesscoder.blogspot.si/2017/02/the-c17-lands.html" target="_blank">The C++17 Lands</a></div>
+    </div>
+  </div>
+  <div class="item">
+    <i class="creative commons icon"></i>
+    <div class="content">
+      <div class="header">License</div>
+      <div class="description">Creative Commons Attribution Share Alike 4.0</div>
+    </div>
+  </div>
+</div>
+
+<div class="ui horizontal inverted divider header"><i class="share square outline icon"></i></div>
+
+<div class="pe-sidebar-buttons">
+  <a class="ui compact mini basic inverted button" href="https://github.com/phpearth/php-lands" target="_blank" data-tooltip="Star on GitHub" data-inverted="1">
+    <i class="github large icon"></i>
+    Star
+  </a>
+
+  <a class="ui compact mini basic inverted button" href="https://github.com/phpearth/php-lands/issues/new" target="_blank" data-tooltip="Discovered a new location for the map?" data-inverted="">
+    <i class="anchor large icon"></i>
+    New location
+  </a>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container" style="margin: 10px 0;">
+        <div class="ui stackable inverted divided equal height">
+          <p class="pe-center">No developers were harmed during the making of this map.<br>
+          Arr!</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://php.earth/assets/bundle.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+    <script src="/dist/bundle.js?v8"></script>
+  </body>
+</html>

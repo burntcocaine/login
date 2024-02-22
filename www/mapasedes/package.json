@@ -1,0 +1,19 @@
+{
+  "name": "@phpearth/php-lands",
+  "version": "1.0.1",
+  "author": "PHP.earth",
+  "license": "CC-BY-SA-4.0",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7",
+    "mini-css-extract-plugin": "^2.6",
+    "node-sass": "^7",
+    "sass-loader": "^13",
+    "style-loader": "^3.3",
+    "webpack": "^5.74",
+    "webpack-cli": "^4.10"
+  }
+}

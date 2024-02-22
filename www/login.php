@@ -1,23 +1,31 @@
 <?php
-	/* Desarrollado por: PROGRAMANDO BROTHERS 	
-	Suscribete a : https://www.youtube.com/ProgramandoBrothers y comparte los vídeos.
-	Recuerda: "EL CONOCIMIENTO SE COMPARTE, POR MÁS POCO QUE SEA".
-	*/
-	include_once('conexion.php');
+    include_once('conexion.php');
 
-	$usuario = $_POST['usuario'];
-	$contra = $_POST['contra'];
+    session_start();
 
-	$sql = "SELECT COUNT(*) FROM usuario where(usuario='$usuario' and contra='$contra' and estado=1)";
-	$res = mysqli_query($conn,$sql);
-	$row = mysqli_fetch_array($res);
+    $usuario = mysqli_real_escape_string($conexion, $_POST['usuario']);
+    $contra = mysqli_real_escape_string($conexion, $_POST['contra']);
 
-	if($row[0] > 0 ){
-		session_start();
-		$_SESSION['usuario'] = $usuario;
-		header( 'Location: principal.php' );
-	}
-	else{
-		header( 'Location: index.php' );		
-	}
+    $sql = "SELECT COUNT(*) FROM usuario WHERE usuario='$usuario' AND contra='$contra' AND estado=1";
+    $res = mysqli_query($conexion, $sql);
+    $row = mysqli_fetch_array($res);
+
+    if ($row[0] > 0) {
+        $consultaUsuario = "SELECT NombreCompleto, dni FROM usuario WHERE usuario='$usuario'";
+        $resUsuario = mysqli_query($conexion, $consultaUsuario);
+        $rowUsuario = mysqli_fetch_array($resUsuario);
+
+        $_SESSION['usuario'] = $usuario;
+        $_SESSION['NombreCompleto'] = $rowUsuario[0];
+        $_SESSION['dni'] = $rowUsuario[1];
+
+        if ($usuario === 'admin') {
+            header('Location: principal.php');
+        } else {
+            header('Location: menu.php');
+        }
+    } 
+
 ?>
+
+

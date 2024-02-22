@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% seo %}
+
+    <link rel="icon" type="image/x-icon" href="https://php.earth/favicon.ico">
+
+    <link rel="stylesheet" href="https://php.earth/assets/main.css">
+    <link rel="stylesheet" href="/dist/style.css?{{ site.app.asset_version }}">
+  </head>
+  <body>
+    <div class="ui stackable inverted borderless menu">
+      <div class="ui container">
+        <a class="item" href="https://php.earth/"><img src="https://php.earth/assets/img/phpearth-menu.png" alt="PHP.earth" class="pe-logo"> <span class="pe-logo-title">PHP.earth</span></a>
+        <h1 id="h1">{{ site.title }}</h1>
+      </div>
+    </div>
+
+    <video loop muted autoplay class="fullscreen" id="video">
+      <source src="https://raw.githubusercontent.com/phpearth/assets/master/php-lands/ship.mp4" type="video/mp4">
+    </video>
+
+    <div class="ui pe-body">
+      <div class="ui container">
+        <div class="ui inverted segment pe-content-segment">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container" style="margin: 10px 0;">
+        <div class="ui stackable inverted divided equal height">
+          <p class="pe-center">No developers were harmed during the making of this map.<br>
+          Arr!</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://php.earth/assets/bundle.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/4.1.0/openseadragon.min.js"></script>
+    <script src="/dist/bundle.js?{{ site.app.asset_version }}"></script>
+  </body>
+</html>
