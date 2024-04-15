@@ -138,7 +138,7 @@
 
             <div class="card">
                 <div class="card-header display-8">
-                    Descargar en pdf <a href="http://foundation.asix/ingresos/ingresos_pdf.php" title="Descargar Listado" target="_blank">
+                    Descargar en pdf <a href="localhost/ingresos_pdf.php" title="Descargar Listado" target="_blank">
 	                  <img alt="descergar pdf" src="../imagenes/descargarpdf.png" width="40" height="40" />
                                                                                                             </a>
                 </div>                
